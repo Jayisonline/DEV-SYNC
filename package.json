@@ -6,22 +6,42 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma build": "prisma generate && next build",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.21.0",
+    "@clerk/themes": "^2.2.51",
+    "@livekit/components-react": "^2.9.12",
+    "@prisma/client": "^6.9.0",
+    "jwt-decode": "^4.0.0",
+    "livekit-client": "^2.13.8",
+    "livekit-server-sdk": "^2.13.1",
+    "lucide-react": "^0.514.0",
+    "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "react-loading-skeleton": "^3.5.0",
+    "react-use": "^17.6.0",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.8.1",
+    "sonner": "^2.0.5",
+    "svix": "^1.67.0",
+    "uuid": "^11.1.0",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/simple-peer": "^9.11.8",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
+    "prisma": "^6.9.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
